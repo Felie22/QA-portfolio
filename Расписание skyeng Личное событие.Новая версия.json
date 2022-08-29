@@ -1,0 +1,705 @@
+{
+	"info": {
+		"_postman_id": "9dd3b7f3-de77-4313-9f6b-0a0ef18f4318",
+		"name": "Расписание skyeng Личное событие",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21976797"
+	},
+	"item": [
+		{
+			"name": "Получение расписания",
+			"item": [
+				{
+					"name": "Получение Расписания",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "token_global={{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"from\": \"2022-08-08T00:00:00+03:00\",\r\n    \"till\": \"2022-08-15T00:00:00+03:00\",\r\n    \"onlyTypes\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{skyUrl}}events",
+							"host": [
+								"{{skyUrl}}events"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Создание ЛС",
+			"item": [
+				{
+					"name": "Создание ЛC1 в будущем",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var key = \"personalId\"\r",
+									"var value = pm.response.json().data.payload.id\r",
+									"\r",
+									"pm.collectionVariables.set(key,value);\r",
+									"\r",
+									"var key1 = \"startAt\"\r",
+									"var value1 = pm.response.json().data.startAt\r",
+									"\r",
+									"pm.collectionVariables.set(key1,value1);\r",
+									"\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "token_global={{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"backgroundColor\": \"#F4F5F6\",\r\n    \"color\": \"#81888D\",\r\n    \"description\": \"Когда ж оно заработает\",\r\n    \"title\": \"Курсовая\",\r\n    \"startAt\": \"2022-08-16T10:00:00+03:00\",\r\n    \"endAt\": \"2022-08-16T10:35:00+03:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{skyUrl}}createPersonal",
+							"host": [
+								"{{skyUrl}}createPersonal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Создание ЛС2 в настоящем",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var key = \"personalId2\"\r",
+									"var value = pm.response.json().data.payload.id\r",
+									"\r",
+									"pm.collectionVariables.set(key,value);\r",
+									"\r",
+									"var key1 = \"startAt2\"\r",
+									"var value1 = pm.response.json().data.startAt\r",
+									"\r",
+									"pm.collectionVariables.set(key1,value1);\r",
+									"\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "token_global={{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"backgroundColor\": \"#F4F5F6\",\r\n    \"color\": \"#81888D\",\r\n    \"description\": \"\",\r\n    \"title\": \"Урок 12\",\r\n    \"startAt\": \"2022-08-13T12:00:00+03:00\",\r\n    \"endAt\": \"2022-08-13T13:40:00+03:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{skyUrl}}createPersonal",
+							"host": [
+								"{{skyUrl}}createPersonal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Создание ЛС3 в прошлом месяце",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var key = \"personalId3\"\r",
+									"var value = pm.response.json().data.payload.id\r",
+									"\r",
+									"pm.collectionVariables.set(key,value);\r",
+									"\r",
+									"var key1 = \"startAt3\"\r",
+									"var value1 = pm.response.json().data.startAt\r",
+									"\r",
+									"pm.collectionVariables.set(key1,value1);\r",
+									"\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "token_global={{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"backgroundColor\": \"#F4F5F6\",\r\n    \"color\": \"#81888D\",\r\n    \"description\": \"123\",\r\n    \"title\": \"Abc\",\r\n    \"startAt\": \"2022-07-10T10:00:00+03:00\",\r\n    \"endAt\": \"2022-07-10T10:25:00+03:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{skyUrl}}createPersonal",
+							"host": [
+								"{{skyUrl}}createPersonal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Создание ЛС с пустым временем",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "token_global={{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"backgroundColor\": \"#F4F5F6\",\r\n    \"color\": \"#81888D\",\r\n    \"description\": \"123\",\r\n    \"title\": \"Abc\",\r\n    \"startAt\": \"2022-08-10\",\r\n    \"endAt\": \"2022-08-10\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{skyUrl}}createPersonal",
+							"host": [
+								"{{skyUrl}}createPersonal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Создание ЛС невалидная дата",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "token_global={{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"backgroundColor\": \"#F4F5F6\",\r\n    \"color\": \"#81888D\",\r\n    \"description\": \"go for a walk in the woods\",\r\n    \"title\": \"123\",\r\n    \"startAt\": \"10-08-2022T10:00:00+03:00\",\r\n    \"endAt\": \"10-08-2022T10:25:00+03:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{skyUrl}}createPersonal",
+							"host": [
+								"{{skyUrl}}createPersonal"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Изменение ЛС",
+			"item": [
+				{
+					"name": "Изменение ЛС1 в будущем",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var key = \"personalId\"\r",
+									"var value = pm.response.json().data.payload.id\r",
+									"\r",
+									"pm.collectionVariables.set(key,value);\r",
+									"\r",
+									"var key1 = \"startAt\"\r",
+									"var value1 = pm.response.json().data.startAt\r",
+									"\r",
+									"pm.collectionVariables.set(key1,value1);\r",
+									"\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "token_global={{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"backgroundColor\": \"#FFF7C7\",\r\n    \"color\": \"#FAC641\",\r\n    \"description\": \"Долго поспать\",\r\n    \"title\": \"Пойти поспать\",\r\n    \"startAt\": \"2022-08-17T11:35:00+03:00\",\r\n    \"endAt\": \"2022-08-17T12:35:00+03:00\",\r\n    \"id\": {{personalId}},\r\n    \"oldStartAt\": \"{{startAt}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{skyUrl}}updatePersonal",
+							"host": [
+								"{{skyUrl}}updatePersonal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Пустое имя в ЛС1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "token_global={{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"backgroundColor\": \"#FFF7C7\",\r\n    \"color\": \"#FAC641\",\r\n    \"description\": \"Долго поспать\",\r\n    \"title\": \"\",\r\n    \"startAt\": \"2022-08-17T11:35:00+03:00\",\r\n    \"endAt\": \"2022-08-17T12:35:00+03:00\",\r\n    \"id\": {{personalId}},\r\n    \"oldStartAt\": \"{{startAt}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{skyUrl}}updatePersonal",
+							"host": [
+								"{{skyUrl}}updatePersonal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Пустой цвет ЛС2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "token_global={{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"backgroundColor\": \"#F4F5F6\",\r\n    \"color\": \"\",\r\n    \"description\": \"\",\r\n    \"title\": \"Урок 2\",\r\n    \"startAt\": \"2022-08-13T12:00:00+03:00\",\r\n    \"endAt\": \"2022-08-13T13:40:00+03:00\",\r\n    \"id\": {{personalId2}},\r\n    \"oldStartAt\": \"{{startAt2}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{skyUrl}}updatePersonal",
+							"host": [
+								"{{skyUrl}}updatePersonal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Перенос ЛС2 в прошлое",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var key = \"personalId2\"\r",
+									"var value = pm.response.json().data.payload.id\r",
+									"\r",
+									"pm.collectionVariables.set(key,value);\r",
+									"\r",
+									"var key1 = \"startAt2\"\r",
+									"var value1 = pm.response.json().data.startAt\r",
+									"\r",
+									"pm.collectionVariables.set(key1,value1);\r",
+									"\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "token_global={{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"backgroundColor\": \"#F4F5F6\",\r\n    \"color\": \"#81888D\",\r\n    \"description\": \"\",\r\n    \"title\": \"Урок 2\",\r\n    \"startAt\": \"2022-08-08T12:00:00+03:00\",\r\n    \"endAt\": \"2022-08-08T13:40:00+03:00\",\r\n    \"id\": {{personalId2}},\r\n    \"oldStartAt\": \"{{startAt2}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{skyUrl}}updatePersonal",
+							"host": [
+								"{{skyUrl}}updatePersonal"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Удаление ЛС",
+			"item": [
+				{
+					"name": "Удаление ЛС1 в будущем",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "token_global={{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"startAt\": \"{{startAt}}\",\r\n    \"id\": {{personalId}}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{skyUrl}}removePersonal",
+							"host": [
+								"{{skyUrl}}removePersonal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Удаление ЛС2 в настоящем",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "token_global={{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"startAt\": \"{{startAt2}}\",\r\n    \"id\": {{personalId2}}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{skyUrl}}removePersonal",
+							"host": [
+								"{{skyUrl}}removePersonal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Удаление ЛС3 в прошлом месяце",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "token_global={{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"startAt\": \"{{startAt3}}\",\r\n    \"id\": {{personalId3}}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{skyUrl}}removePersonal",
+							"host": [
+								"{{skyUrl}}removePersonal"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "skyUrl",
+			"value": "https://api-teachers.skyeng.ru/v2/schedule/",
+			"type": "string"
+		},
+		{
+			"key": "token",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "personalId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "startAt",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "personalId2",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "startAt2",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "personalId3",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "startAt3",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
