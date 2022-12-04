@@ -1,0 +1,228 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta name="author" content="dev.sitechco.ru" />
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=bCXtK8iqcKT-CtBzHD54_sO_KtVl6elQq8C5BYt_ViHaW7x58ybzWOvNlrnv9q4ZxvM9wN8D1Oifz2KGlIAUKAnnQEjVkQSaY56ke2_0oN-Xk-gpt1T5BHWsxzE0nDpZ" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9jaGxpc3Quc2l0ZWNoY28ucnUvcHJvamVjdC8zNjQ5NC9jaGVja2xpc3QvMTM1NzQxMC9kZXRhaWxzL2V4Y2Vs"/></head>
+<table  border="1">
+    <tr>
+        <td colspan="4">Название (Аббр.): Функциональное Ученик (fy)</td>
+    </tr>
+    <tr>
+        <td colspan="4">Описание: Функциональные проверки со стороны ученика</td>
+    </tr>
+            <tr>
+        <td colspan="4">Статус: Не согласован </td>
+    </tr>
+            <tr>
+        <td colspan="4" style="background-color: #ced1d1;">Раздел Видеопрактика</td>
+    </tr>
+    <tr>
+        <td colspan="4" style="background-color: #ced1d1;"></td>
+    </tr>
+    <tr>
+        <td>№</td>
+        <td>Приоритет</td>
+        <td>Проверка</td>
+                <td>Результат</td>
+                    </tr>
+        <tr>
+        <td>
+            1        </td>
+        <td>
+            Высокий        </td>
+        <td>Открыть раздел Видеопрактика</td>
+                <td>Раздел открыт, приложение работает, можно проскроллить вниз, видео-ролики отображаются по категориям, можно вернуться на главную страницу приложения</td>
+                    </tr>
+        <tr>
+        <td>
+            2        </td>
+        <td>
+            Высокий        </td>
+        <td>Ссылка Показать все</td>
+                <td>При клике на ссылку Показать все открывается страница соответствующей категории с каталогом видео, который можно скроллить, можно вернуться назад на страницу раздела Видеопрактика</td>
+                    </tr>
+        <tr>
+        <td>
+            3        </td>
+        <td>
+            Высокий        </td>
+        <td>Клик на видео-ролик из раздела</td>
+                <td>Ролик открывается на отдельной странице, есть стрелка назад, можно вернуться в категорию</td>
+                    </tr>
+        <tr>
+        <td>
+            4        </td>
+        <td>
+            Высокий        </td>
+        <td>Клик на видео-ролик со страницы раздела Видеопрактика</td>
+                <td>Открывается соответствующий ролик на отдельной странице, можно скроллить страницу, есть возможность вернуться обратно на предыдущую страницу</td>
+                    </tr>
+            <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+                <td></td>
+                    </tr>
+            <tr>
+        <td colspan="4" style="background-color: #ced1d1;">Подключение к уроку</td>
+    </tr>
+    <tr>
+        <td colspan="4" style="background-color: #ced1d1;"></td>
+    </tr>
+    <tr>
+        <td>№</td>
+        <td>Приоритет</td>
+        <td>Проверка</td>
+                <td>Результат</td>
+                    </tr>
+        <tr>
+        <td>
+            5        </td>
+        <td>
+            Высокий        </td>
+        <td>Камера/Микрофон вкл/выкл</td>
+                <td>При подключении отображается в соответствии с выставленными действиями</td>
+                    </tr>
+        <tr>
+        <td>
+            6        </td>
+        <td>
+            Высокий        </td>
+        <td>Камера/Микрофон запрещены на момент подключения на девайсе</td>
+                <td>Информационное окно о необходимости подключить видео/аудио</td>
+                    </tr>
+            <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+                <td></td>
+                    </tr>
+            <tr>
+        <td colspan="4" style="background-color: #ced1d1;">Во время урока</td>
+    </tr>
+    <tr>
+        <td colspan="4" style="background-color: #ced1d1;"></td>
+    </tr>
+    <tr>
+        <td>№</td>
+        <td>Приоритет</td>
+        <td>Проверка</td>
+                <td>Результат</td>
+                    </tr>
+        <tr>
+        <td>
+            7        </td>
+        <td>
+            Высокий        </td>
+        <td>Кликнуть Начать в окне при приглашении к уроку</td>
+                <td>Открывается комната урока, отображается экран с меню, изучаемое видео, аудио-запись ролика есть отдельно под видео, внизу странице бар с кнопками переключения страниц, заметки, поиск, вложения, приложение работает</td>
+                    </tr>
+        <tr>
+        <td>
+            8        </td>
+        <td>
+            Высокий        </td>
+        <td>Камера/микрофон вкл/выкл</td>
+                <td>При манипуляциях с камерой/микрофоном приложение работает, в соответствии с действиями звук и видео подключаются и отключаются</td>
+                    </tr>
+        <tr>
+        <td>
+            9        </td>
+        <td>
+            Высокий        </td>
+        <td>Панель с уроком</td>
+                <td>Панель можно свайпать вниз/вверх, она скрывается, открывается камера на полный экран, приложение работает, урок идет</td>
+                    </tr>
+        <tr>
+        <td>
+            10        </td>
+        <td>
+            Высокий        </td>
+        <td>Видео-ролик</td>
+                <td>Можно включить, просмотреть, поставить на паузу.</td>
+                    </tr>
+        <tr>
+        <td>
+            11        </td>
+        <td>
+            Высокий        </td>
+        <td>Аудио-запись</td>
+                <td>Можно прослушать, включить, поставить на паузу</td>
+                    </tr>
+        <tr>
+        <td>
+            12        </td>
+        <td>
+            Высокий        </td>
+        <td>Переключение по вкладкам внизу страницы</td>
+                <td>Вкладки кликабельны, открывают соответствующие панели, которые можно свернуть/закрыть, приложение работает, урок идет</td>
+                    </tr>
+        <tr>
+        <td>
+            13        </td>
+        <td>
+            Средний        </td>
+        <td>Вкладка Поиск</td>
+                <td>Вкладка открыта, строка поиска активна, можно напечатать слово и найти его, на приложение и урок действие не влияет, можно вернуться обратно на главную страницу комнаты</td>
+                    </tr>
+        <tr>
+        <td>
+            14        </td>
+        <td>
+            Высокий        </td>
+        <td>Вкладка Заметки</td>
+                <td>Вкладка открыта, можно напечатать сообщение, сообщение сохраняется, можно вернуться обратно на главную страницу комнаты</td>
+                    </tr>
+        <tr>
+        <td>
+            15        </td>
+        <td>
+            Высокий        </td>
+        <td>Вкладка Вложения</td>
+                <td>Вкладка открыта, можно добавить/удалить вложение, можно вернуться обратно на главную страницу комнаты</td>
+                    </tr>
+        <tr>
+        <td>
+            16        </td>
+        <td>
+            Высокий        </td>
+        <td>Слова в словарь</td>
+                <td>Слова добавляются в словарь</td>
+                    </tr>
+        <tr>
+        <td>
+            17        </td>
+        <td>
+            Высокий        </td>
+        <td>Ответы на задания</td>
+                <td>Есть возможность проставить ответы на задания, если они есть под видео-роликом</td>
+                    </tr>
+        <tr>
+        <td>
+            18        </td>
+        <td>
+            Высокий        </td>
+        <td>Кнопка выйти</td>
+                <td>Открывается окно с вариантами ответа ДА/НЕТ. Если да, то открывается страница раздела Видеопрактика. Если нет, то остается открытой комната урока</td>
+                    </tr>
+            </table>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript"> 
+(function (d, w, c) { (w[c] = w[c] || []).push(function() {
+	try { w.yaCounter43980704 = new Ya.Metrika({
+			id:43980704,
+			clickmap:true,
+			trackLinks:true,
+			accurateTrackBounce:true
+		}); }
+	catch(e) { } });
+	var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); };
+	s.type = "text/javascript"; s.async = true;
+	s.src = "https://mc.yandex.ru/metrika/watch.js";
+	if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); }
+	else { f(); } })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/43980704" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->

@@ -1,0 +1,430 @@
+{
+	"info": {
+		"_postman_id": "d672e150-727c-4d86-bcdc-41d6fc9121c1",
+		"name": "Раздел Видеопрактика",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21976797"
+	},
+	"item": [
+		{
+			"name": "С авторизацией",
+			"item": [
+				{
+					"name": "Получение каталога видео-роликов на главной странице",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api-vimbox.skyeng.ru/api/v1/compilations/showcase",
+							"protocol": "https",
+							"host": [
+								"api-vimbox",
+								"skyeng",
+								"ru"
+							],
+							"path": [
+								"api",
+								"v1",
+								"compilations",
+								"showcase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Получение списка видео-роликов Bookmark",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api-vimbox.skyeng.ru/api/v1/compilations/bookmarks",
+							"protocol": "https",
+							"host": [
+								"api-vimbox",
+								"skyeng",
+								"ru"
+							],
+							"path": [
+								"api",
+								"v1",
+								"compilations",
+								"bookmarks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Получение страницы определенного раздела видео",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "global_token={{token}}",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://api-vimbox.skyeng.ru/api/v1/compilations/customCategory/32?limit=30",
+							"protocol": "https",
+							"host": [
+								"api-vimbox",
+								"skyeng",
+								"ru"
+							],
+							"path": [
+								"api",
+								"v1",
+								"compilations",
+								"customCategory",
+								"32"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "30"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Получение видео-ролика через строку Поиск",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "global_token={{token}}",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://api-vimbox.skyeng.ru/api/v1/compilations/search?q=Hea&source=suggest&limit=10",
+							"protocol": "https",
+							"host": [
+								"api-vimbox",
+								"skyeng",
+								"ru"
+							],
+							"path": [
+								"api",
+								"v1",
+								"compilations",
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Hea"
+								},
+								{
+									"key": "source",
+									"value": "suggest"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Получение конкретного видео по его id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://content-vimbox.skyeng.ru/lesson/getLessonInfoByLessonId/id/67710",
+							"protocol": "https",
+							"host": [
+								"content-vimbox",
+								"skyeng",
+								"ru"
+							],
+							"path": [
+								"lesson",
+								"getLessonInfoByLessonId",
+								"id",
+								"67710"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Без авторизации",
+			"item": [
+				{
+					"name": "Получение главной страницы видеопрактики",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {\r",
+									"    pm.response.to.have.status(401);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api-vimbox.skyeng.ru/api/v1/compilations/showcase",
+							"protocol": "https",
+							"host": [
+								"api-vimbox",
+								"skyeng",
+								"ru"
+							],
+							"path": [
+								"api",
+								"v1",
+								"compilations",
+								"showcase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Получение страницы определенного раздела видео-роликов",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {\r",
+									"    pm.response.to.have.status(401);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "global_token={{token}}",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://api-vimbox.skyeng.ru/api/v1/compilations/customCategory/32?limit=30",
+							"protocol": "https",
+							"host": [
+								"api-vimbox",
+								"skyeng",
+								"ru"
+							],
+							"path": [
+								"api",
+								"v1",
+								"compilations",
+								"customCategory",
+								"32"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "30"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Получение конкретного видео по его id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {\r",
+									"    pm.response.to.have.status(401);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://content-vimbox.skyeng.ru/lesson/getLessonInfoByLessonId/id/67710",
+							"protocol": "https",
+							"host": [
+								"content-vimbox",
+								"skyeng",
+								"ru"
+							],
+							"path": [
+								"lesson",
+								"getLessonInfoByLessonId",
+								"id",
+								"67710"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "noauth"
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,304 @@
+{
+	"info": {
+		"_postman_id": "85a31d2d-4f06-4e50-85d6-d18cc153cd63",
+		"name": "HW4 ToDo list",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21976797"
+	},
+	"item": [
+		{
+			"name": "Запросы",
+			"item": [
+				{
+					"name": "Запрос списка задачи",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{todo}}",
+							"host": [
+								"{{todo}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Добавление новой задачи",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var value = pm.response.json().id;\r",
+									"\r",
+									"pm.collectionVariables.set (\"idEvent\",value);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n     \"title\":\"Выполнить дз\",\r\n     \"completed\":false,\r\n     \"order\":null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{todo}}",
+							"host": [
+								"{{todo}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Отображение новой задачи в списке",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{todo}}{{idEvent}}",
+							"host": [
+								"{{todo}}{{idEvent}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Редактирование задачи",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Разобраться с заглушкой\",\r\n    \"completed\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{todo}}{{idEvent}}",
+							"host": [
+								"{{todo}}{{idEvent}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Отображение отредактированной задачи в списке",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{todo}}{{idEvent}}",
+							"host": [
+								"{{todo}}{{idEvent}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Выполнение задачи",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"completed\":\"true\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{todo}}{{idEvent}}",
+							"host": [
+								"{{todo}}{{idEvent}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Отображение выполненной задачи в спике",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{todo}}{{idEvent}}",
+							"host": [
+								"{{todo}}{{idEvent}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Удаление задачи",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{todo}}{{idEvent}}",
+							"host": [
+								"{{todo}}{{idEvent}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Отсутствие удаленной задачи в списке",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{todo}}{{idEvent}}",
+							"host": [
+								"{{todo}}{{idEvent}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Заглушка",
+			"item": [
+				{
+					"name": "Получение массива из 3 задач",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Получение пустого массива",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "result",
+								"value": "empty list",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Добавление задачи",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Добаление задачи код 500",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"title\":\"ошибка\",\r\n     \"completed\":false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000"
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "todo",
+			"value": "https://todo-app-sky.herokuapp.com/",
+			"type": "string"
+		},
+		{
+			"key": "idEvent",
+			"value": ""
+		}
+	]
+}

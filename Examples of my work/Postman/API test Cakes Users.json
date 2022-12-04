@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "2f26af57-3e2f-41c1-838a-b31f841c0342",
+		"name": "Cakes запросы",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21976797"
+	},
+	"item": [
+		{
+			"name": "дз2 api запрос списка тортов",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://buy-cakes.herokuapp.com/api/cakes/",
+					"protocol": "https",
+					"host": [
+						"buy-cakes",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"cakes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "дз2 api запрос конкретного торта id 40588?",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://buy-cakes.herokuapp.com/api/cakes/40940",
+					"protocol": "https",
+					"host": [
+						"buy-cakes",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"cakes",
+						"40940"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Покупка несуществующего торта",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"\", \r\n    \"phone\": \"\", \r\n    \"dateTime\": null, \r\n    \"cakeId\": \"4254\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://buy-cakes.herokuapp.com/api/orders/add",
+					"protocol": "https",
+					"host": [
+						"buy-cakes",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"orders",
+						"add"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,293 @@
+{
+	"info": {
+		"_postman_id": "23564bc4-205a-469a-a7f5-e9b27913ab0e",
+		"name": "HW3 Admin Cakes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21976797"
+	},
+	"item": [
+		{
+			"name": "Получение списка тортов",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var template = `\r",
+							"    <table>\r",
+							"        <tr>\r",
+							"            <th>id</th>\r",
+							"            <th>name</th>\r",
+							"        \r",
+							"        </tr>\r",
+							"\r",
+							"        {{#each response.cases}}\r",
+							"            <tr>\r",
+							"                <td>{{id}}</td>\r",
+							"                <td>{{name}}</td>\r",
+							"              \r",
+							"            </tr>\r",
+							"        {{/each}}\r",
+							"\r",
+							"    </table>\r",
+							"`;\r",
+							"\r",
+							"pm.visualizer.set(template, {\r",
+							"    response: pm.response.json()\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{baseUrl}}api/cakes",
+					"host": [
+						"{{baseUrl}}api"
+					],
+					"path": [
+						"cakes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Добавление нового торта дропдаун Повод",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}api/occasions",
+					"host": [
+						"{{baseUrl}}api"
+					],
+					"path": [
+						"occasions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Добавление нового торта дропдаун Для кого",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}api/forWho",
+					"host": [
+						"{{baseUrl}}api"
+					],
+					"path": [
+						"forWho"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Добавление нового торта Добавить",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var template = `\r",
+							"    <table>\r",
+							"        <tr>\r",
+							"            <th>id</th>\r",
+							"            <th>name</th>\r",
+							"        \r",
+							"        </tr>\r",
+							"\r",
+							"        {{#each response.cases}}\r",
+							"            <tr>\r",
+							"                <td>{{id}}</td>\r",
+							"                <td>{{name}}</td>\r",
+							"              \r",
+							"            </tr>\r",
+							"        {{/each}}\r",
+							"\r",
+							"    </table>\r",
+							"`;\r",
+							"\r",
+							"pm.visualizer.set(template, {\r",
+							"    response: pm.response.json()\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"12345\",\r\n    \"photoFileName\":\"\",\r\n    \"description\":\"Торт для любого повода\",\r\n    \"occasionId\":0,\r\n    \"forWhoId\":0,\r\n    \"price\":0\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}api/cakes/add",
+					"host": [
+						"{{baseUrl}}api"
+					],
+					"path": [
+						"cakes",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Проверка наличия нового торта в списке",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}api/cakes/41393",
+					"host": [
+						"{{baseUrl}}api"
+					],
+					"path": [
+						"cakes",
+						"41393"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Удаление торта",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}api/cakes/41378",
+					"host": [
+						"{{baseUrl}}api"
+					],
+					"path": [
+						"cakes",
+						"41378"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Проверка отсутствия торта в списке",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}api/cakes/41378",
+					"host": [
+						"{{baseUrl}}api"
+					],
+					"path": [
+						"cakes",
+						"41378"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"value": "",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"key": "baseUrl",
+			"value": "https://buy-cakes.herokuapp.com/"
+		}
+	]
+}

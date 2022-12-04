@@ -1,0 +1,243 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta name="author" content="dev.sitechco.ru" />
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=sotBp6U3UFy-Kk_ervxV4xiau7lR2FLJ7oIWiBy6ENTiHD3vNndKcM2ncRFA7n4eVlQYeae0r27KCLE1sJNs1HPvvdbR33Ahnz4e-5cW4Ig3DIQZgecoMJFpeHfk6pVs" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9jaGxpc3Quc2l0ZWNoY28ucnUvcHJvamVjdC8zNjQ5NC9jaGVja2xpc3QvMTM1NzQxNy9kZXRhaWxzL2V4Y2Vs"/></head>
+<table  border="1">
+    <tr>
+        <td colspan="4">Название (Аббр.): Особые мобильные проверки Ученик (my)</td>
+    </tr>
+    <tr>
+        <td colspan="4">Описание: Особые мобильные проверки со стороны ученика</td>
+    </tr>
+            <tr>
+        <td colspan="4">Статус: Не согласован </td>
+    </tr>
+            <tr>
+        <td colspan="4" style="background-color: #ced1d1;">Инсталляция</td>
+    </tr>
+    <tr>
+        <td colspan="4" style="background-color: #ced1d1;"></td>
+    </tr>
+    <tr>
+        <td>№</td>
+        <td>Приоритет</td>
+        <td>Проверка</td>
+                <td>Результат</td>
+                    </tr>
+        <tr>
+        <td>
+            1        </td>
+        <td>
+            Средний        </td>
+        <td>Установка приложения</td>
+                <td>Приложение установлено, запускается, работает</td>
+                    </tr>
+        <tr>
+        <td>
+            2        </td>
+        <td>
+            Средний        </td>
+        <td>Удаление приложения</td>
+                <td>Приложение полностью удаляется с девайса</td>
+                    </tr>
+            <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+                <td></td>
+                    </tr>
+            <tr>
+        <td colspan="4" style="background-color: #ced1d1;">Сеть</td>
+    </tr>
+    <tr>
+        <td colspan="4" style="background-color: #ced1d1;"></td>
+    </tr>
+    <tr>
+        <td>№</td>
+        <td>Приоритет</td>
+        <td>Проверка</td>
+                <td>Результат</td>
+                    </tr>
+        <tr>
+        <td>
+            3        </td>
+        <td>
+            Средний        </td>
+        <td>Переключение с wi-fi на мобильную сеть и обратно во время подключения к уроку</td>
+                <td>Приложение работает, не прерывается, подключение к уроку успешно происходит.</td>
+                    </tr>
+        <tr>
+        <td>
+            4        </td>
+        <td>
+            Средний        </td>
+        <td>Нестабильная работа сети во время урока (переключение с wi-fi на 3G и обратно)</td>
+                <td>Приложение работает, не прерывается, загрузки идут, немного медленнее, но прогружаются.</td>
+                    </tr>
+        <tr>
+        <td>
+            5        </td>
+        <td>
+            Средний        </td>
+        <td>Отключение связи во время урока</td>
+                <td>Видео останавливается на моменте загрузки. Появляется сообщение о проверки сети. Данные на странице сохраняются. <br />
+При повторном подключении можно продолжить урок.</td>
+                    </tr>
+            <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+                <td></td>
+                    </tr>
+            <tr>
+        <td colspan="4" style="background-color: #ced1d1;">Прерывания</td>
+    </tr>
+    <tr>
+        <td colspan="4" style="background-color: #ced1d1;"></td>
+    </tr>
+    <tr>
+        <td>№</td>
+        <td>Приоритет</td>
+        <td>Проверка</td>
+                <td>Результат</td>
+                    </tr>
+        <tr>
+        <td>
+            6        </td>
+        <td>
+            Средний        </td>
+        <td>Звонок во время урока</td>
+                <td>Появляется окно звонка в беззвучном режиме с вибрацией, можно отклонить звонок и принять.<br />
+Приложение продолжает работать, урок идет, видео работает.</td>
+                    </tr>
+        <tr>
+        <td>
+            7        </td>
+        <td>
+            Средний        </td>
+        <td>Пуш/Сообщение во время урока</td>
+                <td>Появляется окно пуш/сообщение с тихим сигналом, можно свайпнуть/закрыть окно.<br />
+Приложение продолжает работать, урок идет, видео работает.</td>
+                    </tr>
+        <tr>
+        <td>
+            8        </td>
+        <td>
+            Средний        </td>
+        <td>Закрытие приложения во время урока</td>
+                <td>При открытии приложения обратно, есть возможность подключиться обратно к уроку.</td>
+                    </tr>
+        <tr>
+        <td>
+            9        </td>
+        <td>
+            Средний        </td>
+        <td>Свернуть приложение во время урока</td>
+                <td>Приложение продолжает работать, можно развернуть обратно с сохранением всех данных.</td>
+                    </tr>
+        <tr>
+        <td>
+            10        </td>
+        <td>
+            Средний        </td>
+        <td>Подключение/отключение смартфона к сети во время урока по кабелю</td>
+                <td>Приложение работает, урок продолжается</td>
+                    </tr>
+        <tr>
+        <td>
+            11        </td>
+        <td>
+            Средний        </td>
+        <td>Подключение/отключение наушников к смартфону во время урока</td>
+                <td>Приложение работает, урок продолжается, звук переключается с гарнитуры на динамики телефона и обратно</td>
+                    </tr>
+            <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+                <td></td>
+                    </tr>
+            <tr>
+        <td colspan="4" style="background-color: #ced1d1;">Жесты</td>
+    </tr>
+    <tr>
+        <td colspan="4" style="background-color: #ced1d1;"></td>
+    </tr>
+    <tr>
+        <td>№</td>
+        <td>Приоритет</td>
+        <td>Проверка</td>
+                <td>Результат</td>
+                    </tr>
+        <tr>
+        <td>
+            12        </td>
+        <td>
+            Средний        </td>
+        <td>Тап по элементам на экране: слова, переключатели, кнопки. Во время урока</td>
+                <td>Элементы реагируют на тап, приложение работает, не виснет, не вылетает</td>
+                    </tr>
+        <tr>
+        <td>
+            13        </td>
+        <td>
+            Средний        </td>
+        <td>Свайп по окнам и страницам во время урока</td>
+                <td>Окна можно отрыть и закрыть, переключить страницы по средством свайпа. Приложение работает.</td>
+                    </tr>
+        <tr>
+        <td>
+            14        </td>
+        <td>
+            Средний        </td>
+        <td>Долгий тап на экране во время урока</td>
+                <td>Приложение работает, урок продолжается</td>
+                    </tr>
+            <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+                <td></td>
+                    </tr>
+            <tr>
+        <td colspan="4" style="background-color: #ced1d1;">Потребление ресурсов</td>
+    </tr>
+    <tr>
+        <td colspan="4" style="background-color: #ced1d1;"></td>
+    </tr>
+    <tr>
+        <td>№</td>
+        <td>Приоритет</td>
+        <td>Проверка</td>
+                <td>Результат</td>
+                    </tr>
+        <tr>
+        <td>
+            15        </td>
+        <td>
+            Средний        </td>
+        <td>Разряд батареи во время урока</td>
+                <td>Энергопотребление в норме</td>
+                    </tr>
+            </table>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript"> 
+(function (d, w, c) { (w[c] = w[c] || []).push(function() {
+	try { w.yaCounter43980704 = new Ya.Metrika({
+			id:43980704,
+			clickmap:true,
+			trackLinks:true,
+			accurateTrackBounce:true
+		}); }
+	catch(e) { } });
+	var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); };
+	s.type = "text/javascript"; s.async = true;
+	s.src = "https://mc.yandex.ru/metrika/watch.js";
+	if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); }
+	else { f(); } })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/43980704" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->

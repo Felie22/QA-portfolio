@@ -1,0 +1,106 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta name="author" content="dev.sitechco.ru" />
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=r4pDvP3VekvFJwbzSRo-ugoqpTcIk0hgkmyYPWWztiNq3yc6JPhwN0T-C34PCnILHsz-LjTNHh-KyRAFQMmelzmGA3HDV3oe8CyC3jSrT7tfLnj1g0KQs5mb9oOvLNeZ" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9jaGxpc3Quc2l0ZWNoY28ucnUvcHJvamVjdC8zNjQ5NC9jaGVja2xpc3QvMTM1NzQxMy9kZXRhaWxzL2V4Y2Vs"/></head>
+<table  border="1">
+    <tr>
+        <td colspan="4">Название (Аббр.): UX/UI Ученик (uy)</td>
+    </tr>
+    <tr>
+        <td colspan="4">Описание: UX/UI проверки со стороны ученика</td>
+    </tr>
+            <tr>
+        <td colspan="4">Статус: Не согласован </td>
+    </tr>
+            <tr>
+        <td colspan="4" style="background-color: #ced1d1;">Главная страница раздела Видеопрактика в приложении</td>
+    </tr>
+    <tr>
+        <td colspan="4" style="background-color: #ced1d1;"></td>
+    </tr>
+    <tr>
+        <td>№</td>
+        <td>Приоритет</td>
+        <td>Проверка</td>
+                <td>Результат</td>
+                    </tr>
+        <tr>
+        <td>
+            1        </td>
+        <td>
+            Средний        </td>
+        <td>Отображение элементов на странице</td>
+                <td>Стрелка Назад.<br />
+Заголовок Видеопрактика.<br />
+Названия категорий и видео-ролики под ними.<br />
+Напротив названия категорий есть синяя гиперссылка Показать все.<br />
+Под видео-роликами обозначен уровень языка и количество просмотров с цифрой и иконкой глаза. <br />
+Отображается одно целое видео и часть следующего.</td>
+                    </tr>
+            <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+                <td></td>
+                    </tr>
+            <tr>
+        <td colspan="4" style="background-color: #ced1d1;">Комната урока</td>
+    </tr>
+    <tr>
+        <td colspan="4" style="background-color: #ced1d1;"></td>
+    </tr>
+    <tr>
+        <td>№</td>
+        <td>Приоритет</td>
+        <td>Проверка</td>
+                <td>Результат</td>
+                    </tr>
+        <tr>
+        <td>
+            2        </td>
+        <td>
+            Средний        </td>
+        <td>Отображение комнаты</td>
+                <td>Видео учителя либо аватарка, если камера не подключена.<br />
+Ниже панель с видео-роликом и заданиями.<br />
+В футере страницы окно с надписью Page по середине и указанием страниц.<br />
+Под ним панель с обозначениями: стрелка влево, лупа, карандаш, скрепка, стрелка вправо.</td>
+                    </tr>
+        <tr>
+        <td>
+            3        </td>
+        <td>
+            Средний        </td>
+        <td>Видео с учителем/учеником</td>
+                <td>Меню на видео - три точки. Кружок с видео ученика, либо пусто, если камера у ученика отключена.</td>
+                    </tr>
+        <tr>
+        <td>
+            4        </td>
+        <td>
+            Средний        </td>
+        <td>Панель с видео-роликом и заданиями</td>
+                <td>Значок-наушники, заголовок видео-ролика, сам видео-ролик, альтернативная ссылка на видео, Wordlist и Added to dictionary с плюсом синим, если есть слова для добавления, и серым - если все слова уже добавлены, задания по видео-ролику.</td>
+                    </tr>
+            </table>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript"> 
+(function (d, w, c) { (w[c] = w[c] || []).push(function() {
+	try { w.yaCounter43980704 = new Ya.Metrika({
+			id:43980704,
+			clickmap:true,
+			trackLinks:true,
+			accurateTrackBounce:true
+		}); }
+	catch(e) { } });
+	var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); };
+	s.type = "text/javascript"; s.async = true;
+	s.src = "https://mc.yandex.ru/metrika/watch.js";
+	if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); }
+	else { f(); } })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/43980704" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->

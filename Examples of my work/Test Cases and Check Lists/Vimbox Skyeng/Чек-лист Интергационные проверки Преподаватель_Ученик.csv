@@ -1,0 +1,194 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta name="author" content="dev.sitechco.ru" />
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=M-Yg7oo1MsdoQaKEw9XFMamF7NnA7T54TuKDnKAVbJfUN879WieDVbGayvO_6To3JvjSXxYtMUi5maydtEPeWP_-O9KqIoF54ApTh53mYmvtCEuFoXbbZVFbLzCU3KII" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9jaGxpc3Quc2l0ZWNoY28ucnUvcHJvamVjdC8zNjQ5NC9jaGVja2xpc3QvMTM2MDA0OS9kZXRhaWxzL2V4Y2Vs"/></head>
+<table  border="1">
+    <tr>
+        <td colspan="4">Название (Аббр.): Взаимодействие П и У (int)</td>
+    </tr>
+    <tr>
+        <td colspan="4">Описание: Проверки взаимодействия Преподавателя и Ученика во время урока Видеопрактика</td>
+    </tr>
+            <tr>
+        <td colspan="4">Статус: Не согласован </td>
+    </tr>
+            <tr>
+        <td colspan="4" style="background-color: #ced1d1;">Группа тестов без названия</td>
+    </tr>
+    <tr>
+        <td colspan="4" style="background-color: #ced1d1;"></td>
+    </tr>
+    <tr>
+        <td>№</td>
+        <td>Приоритет</td>
+        <td>Проверка</td>
+                <td>Результат</td>
+                    </tr>
+        <tr>
+        <td>
+            1        </td>
+        <td>
+            Высокий        </td>
+        <td>Приглашение ученика на урок по видео</td>
+                <td>У ученика открывается окно с вариантами ответа Начать и Подключусь позже</td>
+                    </tr>
+        <tr>
+        <td>
+            2        </td>
+        <td>
+            Высокий        </td>
+        <td>Ученик отклоняет приглашение на урок</td>
+                <td>Окно закрывается, есть возможность подключиться на урок.<br />
+Преподаватель остается в комнате</td>
+                    </tr>
+        <tr>
+        <td>
+            3        </td>
+        <td>
+            Высокий        </td>
+        <td>П переподключает ученика после отклонения приглашения</td>
+                <td>У ученика снова появляется окно с приглашение подключиться к уроку</td>
+                    </tr>
+        <tr>
+        <td>
+            4        </td>
+        <td>
+            Высокий        </td>
+        <td>П отправляет сообщение через чат ученику</td>
+                <td>У может прочитать и получить сообщение из чата. В приложении появляется информационное окно или поп-ап о пришедшем сообщении от П</td>
+                    </tr>
+        <tr>
+        <td>
+            5        </td>
+        <td>
+            Высокий        </td>
+        <td>Приглашение на урок ученика по ссылке</td>
+                <td>Зайти без выбора ученика и отправить ученику ссылку на урок. Ученик переходит по ссылке и подключается к уроку.</td>
+                    </tr>
+        <tr>
+        <td>
+            6        </td>
+        <td>
+            Средний        </td>
+        <td>Отправлении сообщений через Notes</td>
+                <td>У может видеть сообщения от П в Notes после того, как П нажмет Show to the student.<br />
+Если поле уже открыто, то печающиеся записи видит и У, и П</td>
+                    </tr>
+        <tr>
+        <td>
+            7        </td>
+        <td>
+            Высокий        </td>
+        <td>Добавление слов в словарь</td>
+                <td>Если У или П добавляет слова в словарь, то у противоположной стороны они также добавляются в словарь</td>
+                    </tr>
+        <tr>
+        <td>
+            8        </td>
+        <td>
+            Высокий        </td>
+        <td>Поделиться заметкой</td>
+                <td>Если У или П пишет заметку, она отображается и видна другой стороне</td>
+                    </tr>
+        <tr>
+        <td>
+            9        </td>
+        <td>
+            Высокий        </td>
+        <td>Прикрепление вложений</td>
+                <td>Если У или П открывает вкладку Вложения и Добавляет/Удаляет любое сложение, то же отображается у другой стороны.</td>
+                    </tr>
+        <tr>
+        <td>
+            10        </td>
+        <td>
+            Высокий        </td>
+        <td>Ответы на задания</td>
+                <td>Если У или П отвечает на задания под видео, тоже отображается у другой стороны</td>
+                    </tr>
+        <tr>
+        <td>
+            11        </td>
+        <td>
+            Высокий        </td>
+        <td>Клик на вкладку Вложения во время просмотра видео</td>
+                <td>Вкладка открывается, видео прекращает работать. Видео остается на том месте, на котором остановилось в момент переключения.</td>
+                    </tr>
+        <tr>
+        <td>
+            12        </td>
+        <td>
+            Высокий        </td>
+        <td>П отправляет дз во время урока</td>
+                <td>Урок продолжается, приложение работает. Дз отображается у ученика после окончания урока во вкладке Домашняя работа.</td>
+                    </tr>
+        <tr>
+        <td>
+            13        </td>
+        <td>
+            Высокий        </td>
+        <td>Переключение П по вкладкам грамматика, видео урок, результаты</td>
+                <td>У ученика также переключаются вкладки как у преподавателя</td>
+                    </tr>
+        <tr>
+        <td>
+            14        </td>
+        <td>
+            Высокий        </td>
+        <td>Выход из урока У во время урока</td>
+                <td>Открывается главная страница приложения, есть возможность вернуться на урок, П остается в комнате,</td>
+                    </tr>
+        <tr>
+        <td>
+            15        </td>
+        <td>
+            Высокий        </td>
+        <td>Переподключить У после выхода с урока</td>
+                <td>У ученика открывается снова окно с возможностью подключиться к уроку, открывается комната урока</td>
+                    </tr>
+        <tr>
+        <td>
+            16        </td>
+        <td>
+            Высокий        </td>
+        <td>Преподаватель выходит с урока во время урока через кнопку skypro</td>
+                <td>Открывается выбранная страница приложения, есть возможность вернуться на незаконченный урок или подключить другое видео. Ученик остается в комнате, при подключении другого видео - у ученика меняется видео-ролик и задания в комнате</td>
+                    </tr>
+        <tr>
+        <td>
+            17        </td>
+        <td>
+            Высокий        </td>
+        <td>Стрелка-указка</td>
+                <td>При выборе П указки, у Ученика также выделяются слова, которые выделяет учитель</td>
+                    </tr>
+        <tr>
+        <td>
+            18        </td>
+        <td>
+            Высокий        </td>
+        <td>Кнопка Finish у П</td>
+                <td>Открывается окно с результатами у П и окно Оценить урок у У, приложение работает</td>
+                    </tr>
+            </table>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript"> 
+(function (d, w, c) { (w[c] = w[c] || []).push(function() {
+	try { w.yaCounter43980704 = new Ya.Metrika({
+			id:43980704,
+			clickmap:true,
+			trackLinks:true,
+			accurateTrackBounce:true
+		}); }
+	catch(e) { } });
+	var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); };
+	s.type = "text/javascript"; s.async = true;
+	s.src = "https://mc.yandex.ru/metrika/watch.js";
+	if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); }
+	else { f(); } })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/43980704" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->

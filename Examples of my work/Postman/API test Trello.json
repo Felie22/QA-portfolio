@@ -257,7 +257,10 @@
 							"var value = pm.response.json().id\r",
 							"\r",
 							"pm.collectionVariables.set(key,value);\r",
-							""
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
 						],
 						"type": "text/javascript"
 					}
@@ -274,7 +277,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"token\":\"{{mytoken}}\",\r\n    \"name\":\"{{$randomColor}}\",\r\n    \"idList\":\"{{listId}}\"\r\n}",
+					"raw": "{\r\n    \"token\":\"{{mytoken}}\",\r\n    \"idList\":\"{{listId}}\",\r\n    \"name\":\"{{$randomCity}}\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -580,7 +583,7 @@
 		},
 		{
 			"key": "mytoken",
-			"value": "62eb9fc94c98a17fb7e162da/Rt9huLPRzoFeXBN7MOBzV2CK5qDHE7gx9xmXzkjSAbjWfISrUjXwaDrFO6SfLy44",
+			"value": "62eb9fc94c98a17fb7e162da/eqcij3R0yO3yXIzoMITNTLSnplmTMzqWqkPxa8bCwLwb0v7LYhR88iZc2AE7bkGr",
 			"type": "string"
 		},
 		{
